@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Mvc50Indi.Models;
 
 namespace Mvc50Indi.Data
 {
@@ -12,5 +13,6 @@ namespace Mvc50Indi.Data
             : base(options)
         {
         }
+        public DbSet<Mvc50Indi.Models.Movie> Movie { get; set; }
     }
 }
